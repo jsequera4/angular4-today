@@ -1,0 +1,18 @@
+<table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="row-border hover">
+  <thead>
+  <tr>
+    <th>Namba</th>
+    <th>Jina</th>
+    <th>Simu</th>
+    <th>Kazi</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let person of persons">
+    <td>{{ person.id }}</td>
+    <td>{{ person.name }}</td>
+    <td>{{ person.phone }}</td>
+    <td>{{ person.company.name }}</td>
+  </tr>
+  </tbody>
+</table>

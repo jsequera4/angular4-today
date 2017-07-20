@@ -1,0 +1,228 @@
+<div class="logo">
+    <a [routerLink]="['/']" class="simple-text logo-mini">
+        JATU
+    </a>
+
+    <a [routerLink]="['/']" class="simple-text logo-normal">
+       JATU
+    </a>
+</div>
+<div class="sidebar-wrapper" [perfect-scrollbar]="config">
+    <div class="user">
+        <div class="photo">
+            <img src="../../assets/img/faces/face-2.png" />
+        </div>
+        <div class="info">
+            <a data-toggle="collapse" href="#collapseExample" class="collapsed">
+               <span>
+                    Peter G. Isare
+                    <b class="caret"></b>
+               </span>
+            </a>
+            <div class="clearfix"></div>
+
+            <div class="collapse" id="collapseExample">
+                <ul class="nav">
+                    <li >
+                        <a [routerLink]="['user']">
+                            <span class="sidebar-mini"><i class="ti-user"></i></span>
+                            <span class="sidebar-normal">My Profile</span>
+                        </a>
+                    </li>
+                    <li >
+                        <a [routerLink]="['/']">
+                            <span class="sidebar-mini"><i class="ti-pencil-alt"></i></span>
+                            <span class="sidebar-normal">Edit Profile</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <ul class="nav">
+        <li>
+            <a data-toggle="collapse" href="#dashboardOverview">
+                <i class="ti-panel"></i>
+                <p>Dashibodi
+                    <b class="caret"></b>
+                </p>
+            </a>
+            <div class="collapse" id="dashboardOverview">
+                <ul class="nav">
+                    <li>
+                        <a [routerLink]="['overview']">
+                            <span class="sidebar-mini"><i class="ti-eye"></i></span>
+                            <span class="sidebar-normal">Overview</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['stats']">
+                            <span class="sidebar-mini"><i class="ti-stats-up"></i></span>
+                            <span class="sidebar-normal">Stats</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a data-toggle="collapse" href="#tablesExamples">
+                <i class="ti-id-badge"></i>
+                <p>
+                    Kuhusu Mimi
+                    <b class="caret"></b>
+                </p>
+            </a>
+            <div class="collapse" id="tablesExamples">
+                <ul class="nav">
+                    <li>
+                        <a [routerLink]="['mtandao']">
+                            <span class="sidebar-mini"><i class="ti-link"></i></span>
+                            <span class="sidebar-normal">Mtandao</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['mapato']">
+                            <span class="sidebar-mini"><i class="ti-money"></i></span>
+                            <span class="sidebar-normal">Mapato</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['manunuzi']">
+                            <span class="sidebar-mini"><i class="ti-receipt"></i></span>
+                            <span class="sidebar-normal">Manunuzi</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a data-toggle="collapse" href="#mapsExamples">
+                <i class="ti-shopping-cart"></i>
+                <p>
+                    Dukani
+                    <b class="caret"></b>
+                </p>
+            </a>
+            <div class="collapse" id="mapsExamples">
+                <ul class="nav">
+                    <li>
+                        <a [routerLink]="['stoo']">
+                            <span class="sidebar-mini"><i class="ti-bag"></i></span>
+                            <span class="sidebar-normal">Bidhaa Zilizopo</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['nunua']">
+                            <span class="sidebar-mini"><i class="ti-credit-card"></i></span>
+                            <span class="sidebar-normal">Nunua Bidhaa</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['oda']">
+                            <span class="sidebar-mini"><i class="ti-shopping-cart-full"></i></span>
+                            <span class="sidebar-normal">Oda zako</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['ripoti/manunuzi']">
+                            <span class="sidebar-mini"><i class="ti-bar-chart"></i></span>
+                            <span class="sidebar-normal">Ripoti ya Manunuzi</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a [routerLink]="['fomu']">
+                <i class="ti-write"></i>
+                <p>Fomu ya Uanachama</p>
+            </a>
+        </li>
+        <li>
+            <a data-toggle="collapse" href="#pagesExamples">
+                <i class="ti-layout-list-thumb"></i>
+                <p>
+                    Wanachama
+                    <b class="caret"></b>
+                </p>
+            </a>
+            <div class="collapse" id="pagesExamples">
+                <ul class="nav">
+                    <li>
+                        <a [routerLink]="['ongeza/mwanachama']">
+                            <span class="sidebar-mini"><i class="ti-plus"></i></span>
+                            <span class="sidebar-normal">Ongeza Mwanachama</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['wanachama/wapya']">
+                            <span class="sidebar-mini"><i class="ti-announcement"></i></span>
+                            <span class="sidebar-normal">Wanachama Wapya</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['aina']">
+                            <span class="sidebar-mini"><i class="ti-key"></i></span>
+                            <span class="sidebar-normal">Aina ya Mwanachama</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['wasambazaji']">
+                            <span class="sidebar-mini"><i class="ti-truck"></i></span>
+                            <span class="sidebar-normal">Wasambazaji</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</div>
+
+
+
+<!--<div class="sidebar-wrapper">-->
+<!--<div class="logo">-->
+<!--<a href="https://www.creative-tim.com" class="simple-text">-->
+<!--<div class="logo-img">-->
+<!--<img src="../../assets/img/angular2-logo.png" alt="">-->
+<!--</div>-->
+<!--JATU-->
+<!--</a>-->
+<!--</div>-->
+<!--<ul class="nav">-->
+<!--<li *ngIf="isNotMobileMenu()">-->
+<!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">-->
+<!--<i class="ti-panel"></i>-->
+<!--<p>Stats</p>-->
+<!--</a>-->
+<!--</li>-->
+<!--<li class="dropdown" *ngIf="isNotMobileMenu()">-->
+<!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">-->
+<!--<i class="ti-bell"></i>-->
+<!--<p class="notification">5</p>-->
+<!--<p>Notifications</p>-->
+<!--<b class="caret"></b>-->
+<!--</a>-->
+<!--<ul class="dropdown-menu">-->
+<!--<li><a href="#">Notification 1</a></li>-->
+<!--<li><a href="#">Notification 2</a></li>-->
+<!--<li><a href="#">Notification 3</a></li>-->
+<!--<li><a href="#">Notification 4</a></li>-->
+<!--<li><a href="#">Another notification</a></li>-->
+<!--</ul>-->
+<!--</li>-->
+<!--<li *ngIf="isNotMobileMenu()">-->
+<!--<a href="#">-->
+<!--<i class="ti-settings"></i>-->
+<!--<p>Settings</p>-->
+<!--</a>-->
+<!--</li>-->
+<!--<li class="divider" *ngIf="isNotMobileMenu()"></li>-->
+<!--<li *ngFor="let menuItem of menuItems" routerLinkActive="active" class="{{menuItem.className}}">-->
+<!--<a [routerLink]="[menuItem.path]">-->
+<!--<i class="{{menuItem.icon}}"></i>-->
+<!--<p>{{menuItem.title}}</p>-->
+<!--</a>-->
+<!--</li>-->
+<!--</ul>-->
+<!--</div>-->
